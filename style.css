@@ -1,0 +1,274 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+}
+
+html, body {
+    width: 100%;
+}
+
+body {
+    background-color: rgb(37, 37, 37);
+}
+
+button, .button {
+    cursor: pointer;
+    outline-width: 0;
+    position: relative;
+    overflow: hidden;
+
+    border: none;
+    padding: 0.3em 0.8em;
+    border-radius: 12px;
+    color: white;
+    background: linear-gradient(150deg, rgb(0, 174, 255), rgb(255, 0, 157));
+    font-size: 1em;
+}
+
+
+.elem img, .drops img {
+    height: 150px;
+    margin: 0.3em;
+}
+.elem .big, .drops .big {
+    height: 20px;
+}
+
+
+
+.button {
+    text-decoration: none;
+}
+
+button::before, .button::before {
+    content: "";
+    display: inline-block;
+    width: 0;
+    height: 0;
+    background-color: rgba(255, 255, 255, 0.247);
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    z-index: 1;
+    transition: width 0.1s ease-in-out, height 0.1s ease-in-out;
+    border-radius: inherit;
+}
+
+button:hover::before, .button:hover::before {
+    width: 100%;
+    height: 100%;
+}
+
+.container {
+    max-width: 1920px;
+    margin: auto;
+}
+
+/*instruction section*/
+
+.instruction {
+    background-color: rgb(54, 54, 54);
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.5em 1em;
+}
+.instruction h3 {
+    color: rgb(255, 255, 255);
+}
+.instruction h3 span {
+    color: black;
+    background: url('image/txtbg.png') no-repeat center;
+    background-size: cover;
+    background-position: 0% 50%;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.instruction button {
+    margin-left: 0;
+    margin-left: auto;
+}
+
+.wrapper {
+    display: grid;
+    grid-template-columns: 50% auto;
+    align-items: stretch;
+    justify-content: stretch;
+    padding: 1em;
+    grid-column-gap: 50px;
+}
+@media screen and (max-width: 768px) {
+    .wrapper {
+        grid-template-columns: 100%;
+    }
+}
+.wrapper .test-area {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.wrapper .test-area, .wrapper .block-area {
+    margin-bottom: 1em;
+}
+.test-area .col .qsn-holder {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.test-area .col .qsn-holder .question {
+    background-color: rgb(78, 78, 78);
+    border-radius: 0 10px 10px 0;
+    margin: 0.35em;
+    margin-left: 0;
+    padding: 0.5em;
+    padding-left: 1em;
+    display: flex;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.24);
+}
+.test-area .col .qsn-holder .index {
+    color: rgb(255, 255, 255);
+    background-color: rgb(0, 255, 191);
+    width: 2.5em;
+    padding: 0.6em 0;
+    border-radius: 10px 0 0 10px;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.24);
+}
+.test-area .col .qsn-holder input {
+    width: 4.5em;
+    border: 1px solid rgba(0, 0, 0, 0.226);
+    border-radius: 5px;
+    outline-width: 0;
+    padding: 0.2em;
+    background-color: rgb(145, 145, 145);
+}
+.test-area .col .qsn-holder .question > * + * {
+    margin: 0 0.5em;
+}
+
+table {
+    border-radius: 20px;
+}
+table, td {
+    overflow: hidden;
+}
+table, td {
+    border: 1px solid rgba(192, 192, 192, 0.288);
+    border-collapse: collapse;
+}
+
+
+.block-area table {
+    width: 100%;
+    height: 100%;
+    display: flex;
+}
+.block-area table tbody {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+}
+.block-area table tr {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+.block-area table tr.drops {
+    flex-grow: 1;
+}
+.block-area table tr td {
+    text-align: center;
+}
+.block-area table tr .col2, .block-area table tr .col3 {
+    flex: 25%;
+}
+.block-area table tr .col1 {
+    flex: 50%;
+}
+.block-area table tr td > div {
+    height: 100%;
+}
+.block-area .drops .col {
+    display: flex;
+    flex-direction: column;
+}
+.block-area .drops .col .box {
+    flex-grow: 1;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+.block-area .elem .col {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0.5em;
+}
+.block-area .box {
+    min-height: 200px;
+}
+
+.elem .col {
+    min-height: 150px;
+}
+.drops .col1 {
+    border-radius: 20px 0 0 0;
+}
+.drops .col3 {
+    border-radius: 0 20px 0 0;
+}
+.elem .col1 {
+    border-radius: 0 0 0 20px;
+}
+.elem .col3 {
+    border-radius: 0 0 20px 0;
+}
+.drops h3 {
+    padding: 0.5em 0;
+    background-color: rgb(79, 255, 123);
+}
+
+
+.controls {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 1em 1em 1em;
+}
+.controls .grow {
+    flex-grow: 1;
+    text-align: center;
+}
+.controls > a, button {
+    margin-left: 2em;
+}
+
+#result {
+    height: 100vh;
+    width: 100vw;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    z-index: -10;
+    transition: opacity 0.2s ease-in-out;
+    background-color: white;
+}
+#result > * {
+    margin: 0.5em 0;
+}
+#result span {
+    color: rgb(212, 0, 255);
+}

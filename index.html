@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Math Sheet</title>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+    <link rel="manifest" href="favicon/site.webmanifest">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <section class="instruction">
+            <h3><span>Direction:</span> Type your answer in each box. Push Submit. Use the blocks for help, if you need them.</h3>
+            <button onclick="resetBlocks()">Reset Blocks</button>
+        </section>
+        <div class="wrapper">
+            <div class="test-area">
+                <div class="col">
+                    <div class="qsn-holder">
+                        <div class="index">&nbsp;1</div>
+                        <div class="question">
+                            <div class="qsn">9 + 3</div>
+                            <span>=</span>
+                            <input type="number" name="answer" class="ans">
+                        </div>
+                    </div>
+                    <div class="qsn-holder">
+                        <div class="index">&nbsp;2</div>
+                        <div class="question">
+                            <div class="qsn">4 + 8</div>
+                            <span>=</span>
+                            <input type="number" name="answer" class="ans">
+                        </div>
+                    </div>
+                    <div class="qsn-holder">
+                        <div class="index">&nbsp;3</div>
+                        <div class="question">
+                            <div class="qsn">5 + 7</div>
+                            <span>=</span>
+                            <input type="number" name="answer" class="ans">
+                        </div>
+                    </div>
+                    <div class="qsn-holder">
+                        <div class="index">&nbsp;4</div>
+                        <div class="question">
+                            <div class="qsn">7 + 4</div>
+                            <span>=</span>
+                            <input type="number" name="answer" class="ans">
+                        </div>
+                    </div>
+                    <div class="qsn-holder">
+                        <div class="index">&nbsp;5</div>
+                        <div class="question">
+                            <div class="qsn">3 + 8</div>
+                            <span>=</span>
+                            <input type="number" name="answer" class="ans">
+                        </div>
+                    </div>
+                    <div class="qsn-holder">
+                        <div class="index">&nbsp;6</div>
+                        <div class="question">
+                            <div class="qsn">5 + 9</div>
+                            <span>=</span>
+                            <input type="number" name="answer" class="ans">
+                        </div>
+                    </div>
+                    <div class="qsn-holder">
+                        <div class="index">&nbsp;7</div>
+                        <div class="question">
+                            <div class="qsn">8 + 8</div>
+                            <span>=</span>
+                            <input type="number" name="answer" class="ans">
+                        </div>
+                    </div>
+                    <div class="qsn-holder">
+                        <div class="index">&nbsp;8</div>
+                        <div class="question">
+                            <div class="qsn">6 + 5</div>
+                            <span>=</span>
+                            <input type="number" name="answer" class="ans">
+                        </div>
+                    </div>
+                    <div class="qsn-holder">
+                        <div class="index">&nbsp;9</div>
+                        <div class="question">
+                            <div class="qsn">7 + 7</div>
+                            <span>=</span>
+                            <input type="number" name="answer" class="ans">
+                        </div>
+                    </div>
+                    <div class="qsn-holder">
+                        <div class="index">10</div>
+                        <div class="question">
+                            <div class="qsn">9 + 2</div>
+                            <span>=</span>
+                            <input type="number" name="answer" class="ans">
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="qsn-holder">
+                        <div class="index">11</div>
+                        <div class="question">
+                            <div class="qsn">1 + 9</div>
+                            <span>=</span>
+                            <input type="number" name="answer" class="ans">
+                        </div>
+                    </div>
+                    <div class="qsn-holder">
+                        <div class="index">12</div>
+                        <div class="question">
+                            <div class="qsn">2 + 8</div>
+                            <span>=</span>
+                            <input type="number" name="answer" class="ans">
+                        </div>
+                    </div>
+                    <div class="qsn-holder">
+                        <div class="index">13</div>
+                        <div class="question">
+                            <div class="qsn">5 + 8</div>
+                            <span>=</span>
+                            <input type="number" name="answer" class="ans">
+                        </div>
+                    </div>
+                    <div class="qsn-holder">
+                        <div class="index">14</div>
+                        <div class="question">
+                            <div class="qsn">6 + 7</div>
+                            <span>=</span>
+                            <input type="number" name="answer" class="ans">
+                        </div>
+                    </div>
+                    <div class="qsn-holder">
+                        <div class="index">15</div>
+                        <div class="question">
+                            <div class="qsn">9 + 9</div>
+                            <span>=</span>
+                            <input type="number" name="answer" class="ans">
+                        </div>
+                    </div>
+                    <div class="qsn-holder">
+                        <div class="index">16</div>
+                        <div class="question">
+                            <div class="qsn">8 + 5</div>
+                            <span>=</span>
+                            <input type="number" name="answer" class="ans">
+                        </div>
+                    </div>
+                    <div class="qsn-holder">
+                        <div class="index">17</div>
+                        <div class="question">
+                            <div class="qsn">7 + 8</div>
+                            <span>=</span>
+                            <input type="number" name="answer" class="ans">
+                        </div>
+                    </div>
+                    <div class="qsn-holder">
+                        <div class="index">18</div>
+                        <div class="question">
+                            <div class="qsn">9 + 8</div>
+                            <span>=</span>
+                            <input type="number" name="answer" class="ans">
+                        </div>
+                    </div>
+                    <div class="qsn-holder">
+                        <div class="index">19</div>
+                        <div class="question">
+                            <div class="qsn">7 + 9</div>
+                            <span>=</span>
+                            <input type="number" name="answer" class="ans">
+                        </div>
+                    </div>
+                    <div class="qsn-holder">
+                        <div class="index">20</div>
+                        <div class="question">
+                            <div class="qsn">3 + 7</div>
+                            <span>=</span>
+                            <input type="number" name="answer" class="ans">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="block-area">
+                <table>
+                    <tbody>
+                        <tr class="drops">
+                            <td class="col1">
+                                <div class="col">
+                                    <h3>Hundreds</h3>
+                                    <div class="box" id="drop1" ondrop="drop(event, '1')"></div>
+                                </div>
+                            </td>
+                            <td class="col2">
+                                <div class="col">
+                                    <h3>Tens</h3>
+                                    <div class="box" id="drop2" ondrop="drop(event, '2')"></div>
+                                </div>
+                            </td>
+                            <td class="col3">
+                                <div class="col">
+                                    <h3>Ones</h3>
+                                    <div class="box" id="drop3" ondrop="drop(event, '3')"></div>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr class="elem">
+                            <td class="col1">
+                                <div class="col" id="dragCont1">
+                                    <img src="image/hundred.svg" id="drag1" alt="Hundred" draggable="true" ondragstart="drag(event, '1')">
+                                </div>
+                            </td>
+                            <td class="col2">
+                                <div class="col" id="dragCont2">
+                                    <img src="image/ten.svg" alt="Ten" id="drag2" draggable="true" ondragstart="drag(event, '2')">
+                                </div>
+                            </td>
+                            <td class="col3">
+                                <div class="col" id="dragCont3">
+                                    <img src="image/one.svg" class="big" alt="One"  id="drag3" draggable="true" ondragstart="drag(event, '3')">
+                                </div>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        <div class="controls">
+            <div class="grow">
+                <button onclick="tryAgain()">Try Again!</button>
+            </div>
+            <a href="#" class="button">I Need Help!</a>
+            <button onclick="submit()">Submit</button>
+        </div>
+    </div>
+
+    <div id="result">
+        <h2>Congratulations!</h2>
+        <h3>Your score is <span id="score"></span></h3>
+        <button class="back" onclick="back()">Back</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
